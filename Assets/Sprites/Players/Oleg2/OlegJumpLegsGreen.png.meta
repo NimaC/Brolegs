@@ -1,0 +1,735 @@
+fileFormatVersion: 2
+guid: c6a9846a0e0a5e54dab0b6f9f0cf6c51
+timeCreated: 1452616716
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: OlegJumpLegsGreen_0
+    21300002: OlegJumpLegsGreen_1
+    21300004: OlegJumpLegsGreen_2
+    21300006: OlegJumpLegsGreen_3
+    21300008: OlegJumpLegsGreen_4
+    21300010: OlegJumpLegsGreen_5
+    21300012: OlegJumpLegsGreen_6
+    21300014: OlegJumpLegsGreen_7
+    21300016: OlegJumpLegsGreen_8
+    21300018: OlegJumpLegsGreen_9
+    21300020: OlegJumpLegsGreen_10
+    21300022: OlegJumpLegsGreen_11
+    21300024: OlegJumpLegsGreen_12
+    21300026: OlegJumpLegsGreen_13
+    21300028: OlegJumpLegsGreen_14
+    21300030: OlegJumpLegsGreen_15
+    21300032: OlegJumpLegsGreen_16
+    21300034: OlegJumpLegsGreen_17
+    21300036: OlegJumpLegsGreen_18
+    21300038: OlegJumpLegsGreen_19
+    21300040: OlegJumpLegsGreen_20
+    21300042: OlegJumpLegsGreen_21
+    21300044: OlegJumpLegsGreen_22
+    21300046: OlegJumpLegsGreen_23
+    21300048: OlegJumpLegsGreen_24
+    21300050: OlegJumpLegsGreen_25
+    21300052: OlegJumpLegsGreen_26
+    21300054: OlegJumpLegsGreen_27
+    21300056: OlegJumpLegsGreen_28
+    21300058: OlegJumpLegsGreen_29
+    21300060: OlegJumpLegsGreen_30
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: OlegJumpLegsGreen_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1773
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 36.5, y: -127.5}
+        - {x: 36.5, y: -99.5}
+        - {x: 34.5, y: -79.5}
+        - {x: 29.5, y: -73.5}
+        - {x: -8.5, y: -73.5}
+        - {x: -14.5, y: -78.5}
+        - {x: -14.5, y: -130.5}
+        - {x: 7.5, y: -130.5}
+        - {x: 8.5, y: -127.5}
+        - {x: 16.5, y: -130.5}
+        - {x: 34.5, y: -130.5}
+    - name: OlegJumpLegsGreen_1
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1773
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32.5, y: -70.5}
+        - {x: -12.5, y: -70.5}
+        - {x: -14.5, y: -74.5}
+        - {x: -14.5, y: -119.5}
+        - {x: -12.5, y: -132.5}
+        - {x: 34.5, y: -132.5}
+        - {x: 35.5, y: -131.5}
+        - {x: 35.5, y: -96.5}
+    - name: OlegJumpLegsGreen_2
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 1773
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: -66.5}
+        - {x: -15.5, y: -72.5}
+        - {x: -15.5, y: -132.5}
+        - {x: 33.5, y: -132.5}
+        - {x: 33.5, y: -78.5}
+        - {x: 32.5, y: -70.5}
+        - {x: 24.5, y: -66.5}
+    - name: OlegJumpLegsGreen_3
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 1773
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.5, y: -63.5}
+        - {x: -19.5, y: -64.5}
+        - {x: -19.5, y: -126.5}
+        - {x: 32.5, y: -126.5}
+        - {x: 32.5, y: -63.5}
+    - name: OlegJumpLegsGreen_4
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 1773
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 23.5, y: -59.5}
+        - {x: -17.5, y: -59.5}
+        - {x: -19.5, y: -77.5}
+        - {x: -19.5, y: -119.5}
+        - {x: -13.5, y: -122.5}
+        - {x: 25.5, y: -122.5}
+        - {x: 31.5, y: -107.5}
+        - {x: 31.5, y: -67.5}
+        - {x: 30.5, y: -62.5}
+    - name: OlegJumpLegsGreen_5
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 1773
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24.5, y: -55.5}
+        - {x: -13.5, y: -55.5}
+        - {x: -17.5, y: -62.5}
+        - {x: -20.5, y: -85.5}
+        - {x: -20.5, y: -118.5}
+        - {x: 26.5, y: -118.5}
+        - {x: 30.5, y: -114.5}
+        - {x: 31.5, y: -108.5}
+        - {x: 31.5, y: -56.5}
+    - name: OlegJumpLegsGreen_6
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 1773
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: -51.5}
+        - {x: -20.5, y: -63.5}
+        - {x: -20.5, y: -115.5}
+        - {x: 26.5, y: -115.5}
+        - {x: 30.5, y: -113.5}
+        - {x: 30.5, y: -53.5}
+        - {x: 22.5, y: -51.5}
+    - name: OlegJumpLegsGreen_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1498
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12.5, y: -47.5}
+        - {x: -18.5, y: -47.5}
+        - {x: -21.5, y: -60.5}
+        - {x: -21.5, y: -109.5}
+        - {x: -16.5, y: -111.5}
+        - {x: 25.5, y: -111.5}
+        - {x: 27.5, y: -104.5}
+        - {x: 30.5, y: -96.5}
+        - {x: 30.5, y: -51.5}
+    - name: OlegJumpLegsGreen_8
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1498
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.5, y: -43.5}
+        - {x: -23.5, y: -57.5}
+        - {x: -23.5, y: -108.5}
+        - {x: 24.5, y: -108.5}
+        - {x: 26.5, y: -107.5}
+        - {x: 29.5, y: -88.5}
+        - {x: 29.5, y: -52.5}
+        - {x: 27.5, y: -43.5}
+    - name: OlegJumpLegsGreen_9
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 1498
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22.5, y: -42.5}
+        - {x: 9.5, y: -39.5}
+        - {x: -18.5, y: -39.5}
+        - {x: -18.5, y: -98.5}
+        - {x: -17.5, y: -101.5}
+        - {x: -1.5, y: -101.5}
+        - {x: 0.5, y: -100.5}
+        - {x: 4.5, y: -94.5}
+        - {x: 5.5, y: -88.5}
+        - {x: 8.5, y: -95.5}
+        - {x: 14.5, y: -101.5}
+        - {x: 27.5, y: -101.5}
+        - {x: 31.5, y: -97.5}
+        - {x: 31.5, y: -70.5}
+        - {x: 28.5, y: -46.5}
+    - name: OlegJumpLegsGreen_10
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 1498
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 27.5, y: -92.5}
+        - {x: 27.5, y: -35.5}
+        - {x: -20.5, y: -35.5}
+        - {x: -20.5, y: -92.5}
+    - name: OlegJumpLegsGreen_11
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 1498
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29.5, y: -87.5}
+        - {x: 32.5, y: -86.5}
+        - {x: 32.5, y: -44.5}
+        - {x: 31.5, y: -36.5}
+        - {x: 6.5, y: -31.5}
+        - {x: -18.5, y: -31.5}
+        - {x: -18.5, y: -86.5}
+        - {x: -13.5, y: -87.5}
+        - {x: 0.5, y: -87.5}
+        - {x: 6.5, y: -86.5}
+        - {x: 9.5, y: -77.5}
+        - {x: 8.5, y: -83.5}
+        - {x: 11.5, y: -87.5}
+    - name: OlegJumpLegsGreen_12
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 1498
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15.5, y: -77.5}
+        - {x: 19.5, y: -80.5}
+        - {x: 32.5, y: -79.5}
+        - {x: 32.5, y: -40.5}
+        - {x: 31.5, y: -32.5}
+        - {x: 11.5, y: -27.5}
+        - {x: -18.5, y: -27.5}
+        - {x: -19.5, y: -28.5}
+        - {x: -19.5, y: -72.5}
+        - {x: -10.5, y: -82.5}
+        - {x: 5.5, y: -82.5}
+        - {x: 7.5, y: -79.5}
+        - {x: 9.5, y: -74.5}
+        - {x: 9.5, y: -69.5}
+        - {x: 10.5, y: -71.5}
+    - name: OlegJumpLegsGreen_13
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 1498
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13.5, y: -74.5}
+        - {x: 25.5, y: -78.5}
+        - {x: 31.5, y: -76.5}
+        - {x: 31.5, y: -23.5}
+        - {x: -17.5, y: -23.5}
+        - {x: -19.5, y: -27.5}
+        - {x: -19.5, y: -63.5}
+        - {x: -10.5, y: -78.5}
+        - {x: 3.5, y: -78.5}
+        - {x: 8.5, y: -76.5}
+        - {x: 10.5, y: -64.5}
+        - {x: 11.5, y: -69.5}
+    - name: OlegJumpLegsGreen_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1223
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.5, y: -65.5}
+        - {x: -13.5, y: -74.5}
+        - {x: 21.5, y: -74.5}
+        - {x: 31.5, y: -69.5}
+        - {x: 31.5, y: -32.5}
+        - {x: 29.5, y: -24.5}
+        - {x: 17.5, y: -19.5}
+        - {x: -17.5, y: -19.5}
+        - {x: -20.5, y: -23.5}
+    - name: OlegJumpLegsGreen_15
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1223
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12.5, y: -57.5}
+        - {x: 10.5, y: -64.5}
+        - {x: 10.5, y: -67.5}
+        - {x: 14.5, y: -76.5}
+        - {x: 31.5, y: -74.5}
+        - {x: 31.5, y: -33.5}
+        - {x: 30.5, y: -27.5}
+        - {x: 11.5, y: -23.5}
+        - {x: -15.5, y: -23.5}
+        - {x: -19.5, y: -25.5}
+        - {x: -19.5, y: -49.5}
+        - {x: -16.5, y: -52.5}
+        - {x: -10.5, y: -77.5}
+        - {x: 4.5, y: -77.5}
+        - {x: 9.5, y: -76.5}
+        - {x: 10.5, y: -69.5}
+        - {x: 10.5, y: -65.5}
+        - {x: 8.5, y: -61.5}
+    - name: OlegJumpLegsGreen_16
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 1223
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11.5, y: -71.5}
+        - {x: 15.5, y: -77.5}
+        - {x: 27.5, y: -78.5}
+        - {x: 32.5, y: -73.5}
+        - {x: 32.5, y: -40.5}
+        - {x: 23.5, y: -33.5}
+        - {x: 16.5, y: -31.5}
+        - {x: -0.5, y: -26.5}
+        - {x: -12.5, y: -26.5}
+        - {x: -19.5, y: -30.5}
+        - {x: -19.5, y: -58.5}
+        - {x: -11.5, y: -80.5}
+        - {x: 4.5, y: -80.5}
+        - {x: 6.5, y: -79.5}
+        - {x: 11.5, y: -73.5}
+        - {x: 10.5, y: -68.5}
+    - name: OlegJumpLegsGreen_17
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 1223
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14.5, y: -83.5}
+        - {x: 21.5, y: -83.5}
+        - {x: 33.5, y: -80.5}
+        - {x: 33.5, y: -43.5}
+        - {x: 27.5, y: -38.5}
+        - {x: 17.5, y: -33.5}
+        - {x: -3.5, y: -30.5}
+        - {x: -13.5, y: -30.5}
+        - {x: -19.5, y: -35.5}
+        - {x: -19.5, y: -69.5}
+        - {x: -10.5, y: -83.5}
+        - {x: 7.5, y: -83.5}
+        - {x: 10.5, y: -81.5}
+        - {x: 11.5, y: -75.5}
+        - {x: 11.5, y: -72.5}
+        - {x: 11.5, y: -75.5}
+    - name: OlegJumpLegsGreen_18
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 1223
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11.5, y: -77.5}
+        - {x: 15.5, y: -82.5}
+        - {x: 22.5, y: -87.5}
+        - {x: 34.5, y: -87.5}
+        - {x: 34.5, y: -40.5}
+        - {x: 15.5, y: -33.5}
+        - {x: -18.5, y: -33.5}
+        - {x: -18.5, y: -65.5}
+        - {x: -12.5, y: -87.5}
+        - {x: 5.5, y: -87.5}
+        - {x: 10.5, y: -82.5}
+        - {x: 11.5, y: -79.5}
+        - {x: 11.5, y: -75.5}
+    - name: OlegJumpLegsGreen_19
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 1223
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.5, y: -37.5}
+        - {x: -18.5, y: -76.5}
+        - {x: -8.5, y: -90.5}
+        - {x: 23.5, y: -90.5}
+        - {x: 35.5, y: -87.5}
+        - {x: 35.5, y: -45.5}
+        - {x: 19.5, y: -37.5}
+    - name: OlegJumpLegsGreen_20
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 1223
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.5, y: -40.5}
+        - {x: -18.5, y: -96.5}
+        - {x: -13.5, y: -99.5}
+        - {x: -3.5, y: -99.5}
+        - {x: 7.5, y: -95.5}
+        - {x: 15.5, y: -99.5}
+        - {x: 30.5, y: -99.5}
+        - {x: 30.5, y: -49.5}
+        - {x: 27.5, y: -40.5}
+    - name: OlegJumpLegsGreen_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 948
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.5, y: -44.5}
+        - {x: -18.5, y: -50.5}
+        - {x: -19.5, y: -53.5}
+        - {x: -19.5, y: -98.5}
+        - {x: 31.5, y: -98.5}
+        - {x: 31.5, y: -50.5}
+        - {x: 29.5, y: -44.5}
+    - name: OlegJumpLegsGreen_22
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 948
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.5, y: -47.5}
+        - {x: -19.5, y: -107.5}
+        - {x: -1.5, y: -107.5}
+        - {x: 1.5, y: -103.5}
+        - {x: 4.5, y: -95.5}
+        - {x: 7.5, y: -101.5}
+        - {x: 12.5, y: -107.5}
+        - {x: 24.5, y: -107.5}
+        - {x: 29.5, y: -105.5}
+        - {x: 29.5, y: -49.5}
+        - {x: 24.5, y: -47.5}
+    - name: OlegJumpLegsGreen_23
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 948
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18.5, y: -50.5}
+        - {x: -14.5, y: -50.5}
+        - {x: -17.5, y: -53.5}
+        - {x: -17.5, y: -104.5}
+        - {x: -10.5, y: -112.5}
+        - {x: -2.5, y: -112.5}
+        - {x: 5.5, y: -106.5}
+        - {x: 4.5, y: -99.5}
+        - {x: 7.5, y: -103.5}
+        - {x: 15.5, y: -112.5}
+        - {x: 25.5, y: -112.5}
+        - {x: 31.5, y: -108.5}
+        - {x: 31.5, y: -67.5}
+        - {x: 30.5, y: -54.5}
+    - name: OlegJumpLegsGreen_24
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 948
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.5, y: -54.5}
+        - {x: -16.5, y: -55.5}
+        - {x: -16.5, y: -111.5}
+        - {x: -6.5, y: -116.5}
+        - {x: 27.5, y: -116.5}
+        - {x: 31.5, y: -115.5}
+        - {x: 31.5, y: -58.5}
+        - {x: 28.5, y: -54.5}
+    - name: OlegJumpLegsGreen_25
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 948
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.5, y: -57.5}
+        - {x: -19.5, y: -123.5}
+        - {x: 31.5, y: -123.5}
+        - {x: 31.5, y: -57.5}
+    - name: OlegJumpLegsGreen_26
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 948
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: -61.5}
+        - {x: -17.5, y: -67.5}
+        - {x: -19.5, y: -78.5}
+        - {x: -19.5, y: -125.5}
+        - {x: -15.5, y: -126.5}
+        - {x: 33.5, y: -126.5}
+        - {x: 33.5, y: -70.5}
+        - {x: 31.5, y: -64.5}
+        - {x: 25.5, y: -61.5}
+    - name: OlegJumpLegsGreen_27
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 948
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.5, y: -64.5}
+        - {x: -17.5, y: -68.5}
+        - {x: -19.5, y: -82.5}
+        - {x: -19.5, y: -123.5}
+        - {x: -16.5, y: -129.5}
+        - {x: 36.5, y: -129.5}
+        - {x: 36.5, y: -66.5}
+        - {x: 29.5, y: -64.5}
+    - name: OlegJumpLegsGreen_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 673
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: -67.5}
+        - {x: -19.5, y: -85.5}
+        - {x: -19.5, y: -132.5}
+        - {x: 39.5, y: -132.5}
+        - {x: 39.5, y: -112.5}
+        - {x: 30.5, y: -67.5}
+    - name: OlegJumpLegsGreen_29
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 673
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26.5, y: -70.5}
+        - {x: -9.5, y: -70.5}
+        - {x: -19.5, y: -73.5}
+        - {x: -19.5, y: -133.5}
+        - {x: 40.5, y: -133.5}
+        - {x: 41.5, y: -130.5}
+        - {x: 41.5, y: -107.5}
+        - {x: 31.5, y: -73.5}
+    - name: OlegJumpLegsGreen_30
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 673
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 36.5, y: -127.5}
+        - {x: 36.5, y: -99.5}
+        - {x: 34.5, y: -79.5}
+        - {x: 29.5, y: -73.5}
+        - {x: -8.5, y: -73.5}
+        - {x: -14.5, y: -78.5}
+        - {x: -14.5, y: -130.5}
+        - {x: 7.5, y: -130.5}
+        - {x: 8.5, y: -127.5}
+        - {x: 16.5, y: -130.5}
+        - {x: 34.5, y: -130.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
