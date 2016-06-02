@@ -21,20 +21,35 @@ public class HealthScript : MonoBehaviour {
     {
         if (col.gameObject.tag == "Projectile" && dieCount < 3) {
 			anim.Play (dieState);
-			Vector3 temp = new Vector3(0,-7.5f,-4.3f);
-			rBody.transform.position = temp;
-			dieCount = dieCount + 1;
-			Debug.Log(dieCount);
+			StartCoroutine (Death());
 
 		} 
 		else if (col.gameObject.tag == "Projectile" && dieCount == 3) {
-			GetComponent<PlayerController> ().enabled = false;
-			GetComponentInChildren<AttackScript> ().enabled = false;
+			Controller (false);
 			anim.Play (dieState);
 			transform.gameObject.AddComponent<GameOverScript> ();
+			StartCoroutine (Freezedelay ());
 		}
     }
-      
+    
+	IEnumerator Death() {
+		Controller (false);
+		yield return new WaitForSeconds (.5f);
+		Controller (true);
+		Vector3 temp = new Vector3(0,-7.5f,-4.3f);
+		rBody.transform.position = temp;
+		dieCount = dieCount + 1;
+	}
+
+	IEnumerator Freezedelay() {
+		yield return new WaitForSeconds (.4f);
+		Time.timeScale = 0.0f;
+	}
+
+	void Controller (bool enable) {
+		GetComponent<PlayerController> ().enabled = enable;
+		GetComponentInChildren<AttackScript> ().enabled = enable;
+	}
 
 	// Use this for initialization
 	void Start () {
