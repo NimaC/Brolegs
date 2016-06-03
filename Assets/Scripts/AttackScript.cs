@@ -10,8 +10,9 @@ public class AttackScript : MonoBehaviour {
     private PlayerController playerCtrl;
     public string fireButton = "Fire_P1";
 	public int knifeCount = 3;
+    private float timeLeft = 10.0f;
 
-	void setknifeCount(int count) {
+    void setknifeCount(int count) {
 		knifeCount = count;
 	}
     
@@ -24,12 +25,25 @@ public class AttackScript : MonoBehaviour {
 	void Start () {
 
 	}
-		
-	// Update is called once per frame
-	void Update () {
 
-		if(Input.GetButtonDown(fireButton) && knifeCount > 0)
+
+    // Update is called once per frame
+    void Update () {
+
+        if (knifeCount == 0)
         {
+            timeLeft -= Time.deltaTime;
+            if (timeLeft < 0)
+            {
+                knifeCount = 3;
+                timeLeft = 10.0f;
+            }
+        }
+        
+    
+
+            if (Input.GetButtonDown(fireButton) && knifeCount > 0)
+            {
 			knifeCount = knifeCount - 1;
             //playerCtrl.playerShoot();
             if(playerCtrl.facingRight)

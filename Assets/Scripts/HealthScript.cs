@@ -10,8 +10,6 @@ public class HealthScript : MonoBehaviour {
 	private int dieCount = 0;
     private int dieState = Animator.StringToHash("Base Layer.Die");
 	private Rigidbody2D rBody;
-	GameObject knifes = GameObject.Find("AttackScript");
-	AttackScript attackscript;
 
     void Awake ()
     {
@@ -24,7 +22,6 @@ public class HealthScript : MonoBehaviour {
         if (col.gameObject.tag == "Projectile" && dieCount < 3) {
 			anim.Play (dieState);
 			StartCoroutine (Deathdelay());
-			attackscript.knifeCount = 3;
 		}
 
 		else if (col.gameObject.tag == "Projectile" && dieCount == 3) {
@@ -61,7 +58,6 @@ public class HealthScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		attackscript = knifes.GetComponent<AttackScript>;
        /* if(projectile != null && projectile.gameObject.tag== "Projectile")
         {
             playerCtrl.OnTriggerEnter2D(projectile);
