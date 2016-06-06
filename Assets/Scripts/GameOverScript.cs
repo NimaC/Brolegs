@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
+
 public class GameOverScript : MonoBehaviour {
 	public HealthScript healthscript;
 
