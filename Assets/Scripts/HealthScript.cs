@@ -10,6 +10,8 @@ public class HealthScript : MonoBehaviour {
 	private int dieCount = 0;
     private int dieState = Animator.StringToHash("Base Layer.Die");
 	private Rigidbody2D rBody;
+    private bool spawnShield = false;
+
 
     void Awake ()
     {
@@ -19,12 +21,13 @@ public class HealthScript : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.tag == "Projectile" && dieCount < 3) {
-			anim.Play (dieState);
-			StartCoroutine (Deathdelay());
-		}
+        if (col.gameObject.tag == "Projectile" && dieCount < 2 && spawnShield == false) {
+            anim.Play(dieState);
+            StartCoroutine(Deathdelay());
+        }
+    
 
-		else if (col.gameObject.tag == "Projectile" && dieCount == 3) {
+		else if (col.gameObject.tag == "Projectile" && dieCount == 2 && spawnShield == false) {
 			Controller (false);
 			anim.Play (dieState);
 			transform.gameObject.AddComponent<GameOverScript> ();
@@ -39,7 +42,11 @@ public class HealthScript : MonoBehaviour {
 		Vector3 temp = new Vector3(0,-7.5f,-4.3f);
 		rBody.transform.position = temp;
 		dieCount = dieCount + 1;
-	}
+        spawnShield = true;
+        yield return new WaitForSeconds(3.0f);
+        spawnShield = false;
+ 
+    }
 
 	IEnumerator Freezedelay() {
 		yield return new WaitForSeconds (.4f);
@@ -53,18 +60,20 @@ public class HealthScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
-	}
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
-       /* if(projectile != null && projectile.gameObject.tag== "Projectile")
-        {
-            playerCtrl.OnTriggerEnter2D(projectile);
-            Destroy(gameObject);
-        }
+        /* if(projectile != null && projectile.gameObject.tag== "Projectile")
+         {
+             playerCtrl.OnTriggerEnter2D(projectile);
+             Destroy(gameObject);
+         }
 
-      */  
-	
-	}
+       */
+
+
+
+    }
 }
