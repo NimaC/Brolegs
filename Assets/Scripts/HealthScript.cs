@@ -53,7 +53,7 @@ public class HealthScript : MonoBehaviour {
 		Time.timeScale = 0.0f;
 	}
 
-	void Controller (bool enable) {
+	public void Controller (bool enable) {
 		GetComponent<PlayerController> ().enabled = enable;
 		GetComponentInChildren<AttackScript> ().enabled = enable;
 	}
