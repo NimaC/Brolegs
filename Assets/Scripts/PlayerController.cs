@@ -97,7 +97,6 @@ public class PlayerController : MonoBehaviour
         //Schwerkraft hinzufügen
         velocity.y += gravity * Time.deltaTime;
         _controller.move(velocity * Time.deltaTime);
-        Debug.Log(velocity.y);
         anim.SetFloat("vSpeed", velocity.y);
 
         anim.SetBool("Grounded", _controller.isGrounded);
