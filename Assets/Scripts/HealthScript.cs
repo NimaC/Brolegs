@@ -65,9 +65,16 @@ public class HealthScript : MonoBehaviour {
 		Time.timeScale = 0.0f;
 	}
 
-	void Controller (bool enable) {
-		GetComponent<PlayerController> ().enabled = enable;
-		GetComponentInChildren<AttackScript> ().enabled = enable;
+	public void Controller (bool enable) {
+		if (gameObject.name == "Oleg") {
+			GetComponent<PlayerController> ().enabled = enable;
+			GetComponentInChildren<AttackScript> ().enabled = enable;
+		} 
+		else if (gameObject.name == "Boleg") {
+			Debug.Log ("BolegControls");
+			GetComponent<BolegController> ().enabled = enable;
+			// GetComponent<FireScript> ().enabled = enable;
+		}
 	}
 
 	// Use this for initialization

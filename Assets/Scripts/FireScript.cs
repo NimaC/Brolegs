@@ -24,7 +24,6 @@ public class FireScript : MonoBehaviour {
 		if (Input.GetButton(fireButton)){
 			Vector3 tempPlace = new Vector3 (BolegController.positionX, BolegController.positionY, BolegController.positionZ);
 			Vector3 tempScale = new Vector3 (BolegController.scaleX, BolegController.scaleY, BolegController.scaleZ);
-			Debug.Log(BolegController.scaleX);
 			transform.localScale = tempScale;
 		    transform.position = tempPlace;
 		}
