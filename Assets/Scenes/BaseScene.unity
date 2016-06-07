@@ -1279,6 +1279,10 @@ Prefab:
       propertyPath: m_Name
       value: Oleg
       objectReference: {fileID: 0}
+    - target: {fileID: 142506, guid: 6661224a7b077374e9ad73f0036ae0b2, type: 2}
+      propertyPath: m_Name
+      value: Oleg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6661224a7b077374e9ad73f0036ae0b2, type: 2}
   m_IsPrefabParent: 0
@@ -1943,6 +1947,76 @@ BoxCollider2D:
   m_Offset: {x: -0.00819079, y: 2.0324297}
   serializedVersion: 2
   m_Size: {x: 4.6861725, y: 0.4681367}
+<<<<<<< 22110da24ea072f60eec1c55e69e1dbabe50b856
+=======
+--- !u!1001 &1477561274
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 475610, guid: 2948a00bef4296843910125f82eca2f5, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 17.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 475610, guid: 2948a00bef4296843910125f82eca2f5, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 7.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 475610, guid: 2948a00bef4296843910125f82eca2f5, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -2.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 475610, guid: 2948a00bef4296843910125f82eca2f5, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 475610, guid: 2948a00bef4296843910125f82eca2f5, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 475610, guid: 2948a00bef4296843910125f82eca2f5, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 475610, guid: 2948a00bef4296843910125f82eca2f5, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 475610, guid: 2948a00bef4296843910125f82eca2f5, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9548894, guid: 2948a00bef4296843910125f82eca2f5, type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: b0bc4cf4d8d3b3249aa5309093122099, type: 2}
+    - target: {fileID: 11407420, guid: 2948a00bef4296843910125f82eca2f5, type: 2}
+      propertyPath: gravity
+      value: -80
+      objectReference: {fileID: 0}
+    - target: {fileID: 11483498, guid: 2948a00bef4296843910125f82eca2f5, type: 2}
+      propertyPath: ignoreOneWayPlatformsThisFrame
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11483498, guid: 2948a00bef4296843910125f82eca2f5, type: 2}
+      propertyPath: oneWayPlatformMask.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 11407420, guid: 2948a00bef4296843910125f82eca2f5, type: 2}
+      propertyPath: runSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 116906, guid: 2948a00bef4296843910125f82eca2f5, type: 2}
+      propertyPath: m_Name
+      value: Boleg
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 11407420, guid: 2948a00bef4296843910125f82eca2f5, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: 2948a00bef4296843910125f82eca2f5, type: 2}
+  m_IsPrefabParent: 0
+>>>>>>> Boleg Refill Function Build in
 --- !u!1 &1589299465 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 131696, guid: 9e4933bf5b0100443a736f6eb8e40cf5, type: 2}
@@ -1979,7 +2053,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Fire: {fileID: 1589299467}
   fireButton: Fire_P2
+<<<<<<< 22110da24ea072f60eec1c55e69e1dbabe50b856
   refillButton: Refill_P1
+=======
+  fireTime: 2.5
+>>>>>>> Boleg Refill Function Build in
 --- !u!1 &1591189571 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 142506, guid: 6661224a7b077374e9ad73f0036ae0b2, type: 2}
