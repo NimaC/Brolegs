@@ -21,10 +21,21 @@ public class HealthScript : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.tag == "Projectile" && dieCount < 2 && spawnShield == false) {
+		if (col.gameObject.tag == "Projectile" && dieCount < 2 && spawnShield == false) {
             anim.Play(dieState);
             StartCoroutine(Deathdelay());
         }
+		else if (col.gameObject.tag == "Fire" && dieCount < 2 && spawnShield == false) {
+			anim.Play(dieState);
+			StartCoroutine(Deathdelay());
+		}
+
+		else if (col.gameObject.tag == "Fire" && dieCount == 2 && spawnShield == false) {
+			Controller (false);
+			anim.Play (dieState);
+			transform.gameObject.AddComponent<GameOverScript> ();
+			StartCoroutine (Freezedelay ());
+		}
     
 
 		else if (col.gameObject.tag == "Projectile" && dieCount == 2 && spawnShield == false) {
@@ -34,6 +45,7 @@ public class HealthScript : MonoBehaviour {
 			StartCoroutine (Freezedelay ());
 		}
     }
+		
     
 	IEnumerator Deathdelay() {
 		Controller (false);
