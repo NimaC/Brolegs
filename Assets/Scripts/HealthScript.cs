@@ -90,6 +90,7 @@ public class HealthScript : MonoBehaviour {
 			GetComponentInChildren<AttackScript> ().enabled = enable;
 		} 
 		else if (gameObject.name == "Boleg") {
+<<<<<<< d3863b7db22f45ed51609f0ed906803c64fee906
 			GetComponent<BolegController> ().enabled = enable;
 			// GetComponent<FireScript> ().enabled = enable;
 		}
@@ -103,6 +104,12 @@ public class HealthScript : MonoBehaviour {
 		else if (gameObject.name == "Boleg") {
 			bolegiconrend [dieCount].enabled = false;
 		}
+=======
+			Debug.Log ("BolegControls");
+			GetComponent<BolegController> ().enabled = enable;
+			// GetComponent<FireScript> ().enabled = enable;
+		}
+>>>>>>> Death Fixed
 	}
 
 	// Use this for initialization
