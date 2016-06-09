@@ -19,7 +19,7 @@ public class FireScript : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-<<<<<<< d3863b7db22f45ed51609f0ed906803c64fee906
+		
 		if (fireTime > 0) {
 			if (Input.GetButton (fireButton)) {
 				Vector3 tempPlace = new Vector3 (BolegController.positionX, BolegController.positionY, BolegController.positionZ);
@@ -34,13 +34,12 @@ public class FireScript : MonoBehaviour {
 		else {
 			transform.position = new Vector3 (100, 100, 100);
 			//StartCoroutine (Firedelay ());
-=======
+
 		if (Input.GetButton(fireButton)){
 			Vector3 tempPlace = new Vector3 (BolegController.positionX, BolegController.positionY, BolegController.positionZ);
 			Vector3 tempScale = new Vector3 (BolegController.scaleX, BolegController.scaleY, BolegController.scaleZ);
 			transform.localScale = tempScale;
 		    transform.position = tempPlace;
->>>>>>> Death Fixed
 		}
 		if (Input.GetButton (refillButton) && fireTime < 2.5f && !Input.GetButton(fireButton)) {
             fireTime += (Time.deltaTime) / 2;
@@ -51,4 +50,5 @@ public class FireScript : MonoBehaviour {
 		yield return new WaitForSeconds (3.0f);
 		fireTime = 2.5f;
 	} */
+	}
 }
