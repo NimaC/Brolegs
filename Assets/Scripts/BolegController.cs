@@ -3,21 +3,28 @@ using System.Collections;
 using Prime31;
 
 
-public class PlayerController : MonoBehaviour
+public class BolegController : MonoBehaviour
 {
 
     //Bewegung Einstellungen
+	public Rigidbody2D Fire;
     public float gravity = -30f;
     public float runSpeed = 8f;
-    public string horizontalInput = "Horizontal_P1";
-    public string jumpButton = "Jump_P1";
-    public string fireButton = "Fire_P1";
+    public string horizontalInput = "Horizontal_P2";
+    public string jumpButton = "Jump_P2";
+    public string fireButton = "Fire_P2";
     [HideInInspector]
-    public bool facingRight = true;
+    public static bool facingRight = true;
     public float move = 0f;
     private Rigidbody2D rBody;
-
     private CharacterController2D _controller;
+	public static float positionX;
+	public static float positionY;
+	public static float positionZ;
+	public static float scaleX;
+	public static float scaleY;
+	public static float scaleZ;
+    public bool fireBreathing;
 
     //Animationen
     Animator anim;
@@ -42,6 +49,14 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+		positionX = transform.position.x;
+		positionY = transform.position.y;        
+		positionZ = transform.position.z;  
+
+		scaleX = transform.localScale.x;
+		scaleY = transform.localScale.y;
+		scaleZ = transform.localScale.z;
+
         var velocity = _controller.velocity;
 
         if (_controller.isGrounded)
@@ -84,12 +99,18 @@ public class PlayerController : MonoBehaviour
             var targetJumpHeight = 3.5f;
             velocity.y = Mathf.Sqrt(2f * targetJumpHeight * -gravity);
             anim.SetTrigger("Jump");
-           
+
+
         }
 
-        if (Input.GetButtonDown(fireButton))
+        if (Input.GetButton(fireButton) && FireScript.fireTime > 0)
         {
-            anim.SetTrigger("Fire");
+            fireBreathing = true;
+        }
+
+        if (!Input.GetButton(fireButton) || FireScript.fireTime < 0)
+        {
+            fireBreathing = false;
         }
 
 
@@ -97,9 +118,9 @@ public class PlayerController : MonoBehaviour
         //Schwerkraft hinzufügen
         velocity.y += gravity * Time.deltaTime;
         _controller.move(velocity * Time.deltaTime);
-        Debug.Log(velocity.y);
-        anim.SetFloat("vSpeed", velocity.y);
 
+        anim.SetFloat("vSpeed", velocity.y);
+        anim.SetBool("Fire", fireBreathing);
         anim.SetBool("Grounded", _controller.isGrounded);
 
 

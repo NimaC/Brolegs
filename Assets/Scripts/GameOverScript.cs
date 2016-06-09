@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class GameOverScript : MonoBehaviour {
+	public HealthScript healthscript;
 
     void OnGUI()
     {
@@ -23,6 +24,8 @@ public class GameOverScript : MonoBehaviour {
         {
             // Reload the level
             Application.LoadLevel("BaseScene");
+			Time.timeScale = 1.0f;
+			healthscript.Controller (true);
         }
 
         if (
