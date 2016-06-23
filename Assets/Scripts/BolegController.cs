@@ -120,7 +120,7 @@ public class BolegController : MonoBehaviour
         _controller.move(velocity * Time.deltaTime);
 
         anim.SetFloat("vSpeed", velocity.y);
-        anim.SetBool("Fire", fireBreathing);
+		anim.SetBool("Fire", fireBreathing);
         anim.SetBool("Grounded", _controller.isGrounded);
 
 
