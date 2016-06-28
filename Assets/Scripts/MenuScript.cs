@@ -21,7 +21,7 @@ public class MenuScript : MonoBehaviour {
         if (GUI.Button(buttonRect, "Play"))
         {
             //erstes Level laden
-            Application.LoadLevel("BaseScene");
+            Application.LoadLevel("Characterselect");
         }
     }
 

@@ -11,7 +11,7 @@ public class ProjectileController : MonoBehaviour {
         {
             Destroy(gameObject);
         }
-        if (col.gameObject.tag == "Player" || col.gameObject.tag == "Projectile")
+		if (col.gameObject.tag == "Player" || col.gameObject.tag == "Projectile" || col.gameObject.tag == "Fire")
         {
             Destroy(gameObject);
         }

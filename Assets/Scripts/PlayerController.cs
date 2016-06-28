@@ -42,7 +42,6 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         var velocity = _controller.velocity;
 
         if (_controller.isGrounded)
@@ -85,8 +84,7 @@ public class PlayerController : MonoBehaviour
             var targetJumpHeight = 3.5f;
             velocity.y = Mathf.Sqrt(2f * targetJumpHeight * -gravity);
             anim.SetTrigger("Jump");
-
-
+           
         }
 
         if (Input.GetButtonDown(fireButton))
@@ -99,8 +97,11 @@ public class PlayerController : MonoBehaviour
         //Schwerkraft hinzufügen
         velocity.y += gravity * Time.deltaTime;
         _controller.move(velocity * Time.deltaTime);
+        anim.SetFloat("vSpeed", velocity.y);
 
-    
+        anim.SetBool("Grounded", _controller.isGrounded);
+
+
     }
 
 
