@@ -4,7 +4,7 @@ using System.Collections;
 public class AttackScript : MonoBehaviour {
 
     public Rigidbody2D projectile;
-    public float speed = 20f;
+    public float speed = 30f;
     public float gravity = -30f;
     //public string gunButton = "Fire_P1";
     private PlayerController playerCtrl;

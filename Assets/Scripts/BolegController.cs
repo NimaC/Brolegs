@@ -9,7 +9,7 @@ public class BolegController : MonoBehaviour
     //Bewegung Einstellungen
 	public Rigidbody2D Fire;
     public float gravity = -30f;
-    public float runSpeed = 8f;
+    public float runSpeed = 9f;
     public string horizontalInput = "Horizontal_P2";
     public string jumpButton = "Jump_P2";
     public string fireButton = "Fire_P2";
@@ -25,6 +25,7 @@ public class BolegController : MonoBehaviour
 	public static float scaleY;
 	public static float scaleZ;
     public bool fireBreathing;
+	public float targetJumpHeight = 4.5f;
 
     //Animationen
     Animator anim;
@@ -96,7 +97,6 @@ public class BolegController : MonoBehaviour
         //Vertikaler SpielerInput
         if (Input.GetButtonDown(jumpButton) && _controller.isGrounded)
         {
-            var targetJumpHeight = 3.5f;
             velocity.y = Mathf.Sqrt(2f * targetJumpHeight * -gravity);
             anim.SetTrigger("Jump");
 

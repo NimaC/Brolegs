@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     public bool facingRight = true;
     public float move = 0f;
     private Rigidbody2D rBody;
+	public float targetJumpHeight = 4.5f;
 
     private CharacterController2D _controller;
 
@@ -81,7 +82,6 @@ public class PlayerController : MonoBehaviour
         //Vertikaler SpielerInput
         if (Input.GetButtonDown(jumpButton) && _controller.isGrounded)
         {
-            var targetJumpHeight = 3.5f;
             velocity.y = Mathf.Sqrt(2f * targetJumpHeight * -gravity);
             anim.SetTrigger("Jump");
            

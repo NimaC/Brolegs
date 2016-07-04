@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Fire
   - Projectile
+  - Border
+  - Block
   layers:
   - Default
   - TransparentFX

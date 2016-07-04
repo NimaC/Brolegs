@@ -40,7 +40,7 @@ public class HealthScript : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D col)
     {
-		if (col.gameObject.tag == "Projectile" && dieCount < 2 && spawnShield == false) {
+		if (col.gameObject.tag == "Projectile" && dieCount < 2 && spawnShield == false && !ProjectileController.isStuck) {
             anim.Play(dieState);
             StartCoroutine(Deathdelay());
         }
