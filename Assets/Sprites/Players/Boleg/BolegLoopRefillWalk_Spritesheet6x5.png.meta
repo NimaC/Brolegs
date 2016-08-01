@@ -1,0 +1,712 @@
+fileFormatVersion: 2
+guid: 78042cb0d733c4d1aaf2b42f32c2bf6d
+timeCreated: 1470050920
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: BolegLoopRefillWalk_Spritesheet6x5_0
+    21300002: BolegLoopRefillWalk_Spritesheet6x5_1
+    21300004: BolegLoopRefillWalk_Spritesheet6x5_2
+    21300006: BolegLoopRefillWalk_Spritesheet6x5_3
+    21300008: BolegLoopRefillWalk_Spritesheet6x5_4
+    21300010: BolegLoopRefillWalk_Spritesheet6x5_5
+    21300012: BolegLoopRefillWalk_Spritesheet6x5_6
+    21300014: BolegLoopRefillWalk_Spritesheet6x5_7
+    21300016: BolegLoopRefillWalk_Spritesheet6x5_8
+    21300018: BolegLoopRefillWalk_Spritesheet6x5_9
+    21300020: BolegLoopRefillWalk_Spritesheet6x5_10
+    21300022: BolegLoopRefillWalk_Spritesheet6x5_11
+    21300024: BolegLoopRefillWalk_Spritesheet6x5_12
+    21300026: BolegLoopRefillWalk_Spritesheet6x5_13
+    21300028: BolegLoopRefillWalk_Spritesheet6x5_14
+    21300030: BolegLoopRefillWalk_Spritesheet6x5_15
+    21300032: BolegLoopRefillWalk_Spritesheet6x5_16
+    21300034: BolegLoopRefillWalk_Spritesheet6x5_17
+    21300036: BolegLoopRefillWalk_Spritesheet6x5_18
+    21300038: BolegLoopRefillWalk_Spritesheet6x5_19
+    21300040: BolegLoopRefillWalk_Spritesheet6x5_20
+    21300042: BolegLoopRefillWalk_Spritesheet6x5_21
+    21300044: BolegLoopRefillWalk_Spritesheet6x5_22
+    21300046: BolegLoopRefillWalk_Spritesheet6x5_23
+    21300048: BolegLoopRefillWalk_Spritesheet6x5_24
+    21300050: BolegLoopRefillWalk_Spritesheet6x5_25
+    21300052: BolegLoopRefillWalk_Spritesheet6x5_26
+    21300054: BolegLoopRefillWalk_Spritesheet6x5_27
+    21300056: BolegLoopRefillWalk_Spritesheet6x5_28
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: BolegLoopRefillWalk_Spritesheet6x5_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1100
+        width: 440
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 49, y: 99.33331}
+        - {x: -44, y: 99.33331}
+        - {x: -87, y: 34.333313}
+        - {x: -87, y: -81.66669}
+        - {x: -69, y: -85.66669}
+        - {x: -50, y: -74.66669}
+        - {x: -30, y: -88.66669}
+        - {x: -8, y: -91.66669}
+        - {x: 36, y: -91.66669}
+        - {x: 107, y: 35.333313}
+        - {x: 107, y: 63.333313}
+        - {x: 102, y: 67.33331}
+    - name: BolegLoopRefillWalk_Spritesheet6x5_1
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 1100
+        width: 440
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51.333313, y: 99.33331}
+        - {x: -35.666687, y: 99.33331}
+        - {x: -86.66669, y: 22.333313}
+        - {x: -86.66669, y: -91.66669}
+        - {x: 64.33331, y: -91.66669}
+        - {x: 107.33331, y: 12.333313}
+        - {x: 107.33331, y: 68.33331}
+        - {x: 101.33331, y: 73.33331}
+    - name: BolegLoopRefillWalk_Spritesheet6x5_2
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 1100
+        width: 440
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28.333374, y: 99.33331}
+        - {x: -70.333374, y: 68.33331}
+        - {x: -86.333374, y: 5.333313}
+        - {x: -86.333374, y: -78.66669}
+        - {x: -80.333374, y: -82.66669}
+        - {x: -60.333374, y: -81.66669}
+        - {x: -52.333374, y: -71.66669}
+        - {x: -51.333374, y: -67.66669}
+        - {x: -52.333374, y: -62.666687}
+        - {x: -36.333374, y: -84.66669}
+        - {x: -22.333374, y: -89.66669}
+        - {x: -15.333374, y: -91.66669}
+        - {x: 60.666626, y: -91.66669}
+        - {x: 90.666626, y: -84.66669}
+        - {x: 107.666626, y: -18.666687}
+        - {x: 107.666626, y: 99.33331}
+    - name: BolegLoopRefillWalk_Spritesheet6x5_3
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 1100
+        width: 440
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 88.49994, y: 99.33331}
+        - {x: -46.50006, y: 99.33331}
+        - {x: -85.50006, y: 57.333313}
+        - {x: -85.50006, y: -76.66669}
+        - {x: -59.50006, y: -85.66669}
+        - {x: -47.50006, y: -73.66669}
+        - {x: -49.50006, y: -87.66669}
+        - {x: -39.50006, y: -90.66669}
+        - {x: 37.49994, y: -90.66669}
+        - {x: 50.49994, y: -74.66669}
+        - {x: 39.49994, y: -57.666687}
+        - {x: 108.49994, y: 31.333313}
+        - {x: 108.49994, y: 81.33331}
+    - name: BolegLoopRefillWalk_Spritesheet6x5_4
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 1100
+        width: 440
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8.333252, y: 102.33331}
+        - {x: -58.666748, y: 102.33331}
+        - {x: -84.66675, y: 3.333313}
+        - {x: -84.66675, y: -90.66669}
+        - {x: 51.333252, y: -90.66669}
+        - {x: 107.33325, y: 22.333313}
+        - {x: 107.33325, y: 60.333313}
+        - {x: 102.33325, y: 70.33331}
+    - name: BolegLoopRefillWalk_Spritesheet6x5_5
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 1100
+        width: 440
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13.666626, y: 104.33331}
+        - {x: -41.333374, y: 104.33331}
+        - {x: -83.333374, y: 2.333313}
+        - {x: -83.333374, y: -80.66669}
+        - {x: -80.333374, y: -87.66669}
+        - {x: -56.333374, y: -78.66669}
+        - {x: -45.333374, y: -67.66669}
+        - {x: -34.333374, y: -88.66669}
+        - {x: 41.666626, y: -88.66669}
+        - {x: 107.666626, y: 37.333313}
+        - {x: 107.666626, y: 61.333313}
+        - {x: 99.666626, y: 68.33331}
+    - name: BolegLoopRefillWalk_Spritesheet6x5_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 825
+        width: 440
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 105}
+        - {x: -67, y: 64}
+        - {x: -84, y: 1}
+        - {x: -84, y: -76}
+        - {x: -65, y: -91}
+        - {x: 46, y: -91}
+        - {x: 107, y: -6}
+        - {x: 107, y: 76}
+        - {x: 53, y: 105}
+    - name: BolegLoopRefillWalk_Spritesheet6x5_7
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 825
+        width: 440
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -61.666687, y: 106}
+        - {x: -82.66669, y: 38}
+        - {x: -82.66669, y: -78}
+        - {x: -52.666687, y: -78}
+        - {x: -42.666687, y: -67}
+        - {x: -28.666687, y: -87}
+        - {x: -28.666687, y: -93}
+        - {x: 49.333313, y: -93}
+        - {x: 107.33331, y: -42}
+        - {x: 107.33331, y: 81}
+        - {x: 25.333313, y: 106}
+    - name: BolegLoopRefillWalk_Spritesheet6x5_8
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 825
+        width: 440
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -47.333374, y: 106}
+        - {x: -81.333374, y: 72}
+        - {x: -81.333374, y: -94}
+        - {x: 49.666626, y: -94}
+        - {x: 107.666626, y: -25}
+        - {x: 107.666626, y: 75}
+        - {x: 80.666626, y: 106}
+    - name: BolegLoopRefillWalk_Spritesheet6x5_9
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 825
+        width: 440
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 108.49994, y: 77}
+        - {x: 52.49994, y: 106}
+        - {x: -36.50006, y: 106}
+        - {x: -80.50006, y: 50}
+        - {x: -80.50006, y: -78}
+        - {x: -70.50006, y: -80}
+        - {x: -48.50006, y: -79}
+        - {x: -38.50006, y: -73}
+        - {x: -16.500061, y: -93}
+        - {x: -13.500061, y: -94}
+        - {x: 33.49994, y: -94}
+        - {x: 108.49994, y: 41}
+    - name: BolegLoopRefillWalk_Spritesheet6x5_10
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 825
+        width: 440
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -43.666748, y: 106}
+        - {x: -80.66675, y: 7}
+        - {x: -80.66675, y: -95}
+        - {x: 35.333252, y: -95}
+        - {x: 107.33325, y: 4}
+        - {x: 107.33325, y: 97}
+        - {x: 31.333252, y: 106}
+    - name: BolegLoopRefillWalk_Spritesheet6x5_11
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 825
+        width: 440
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -43.333374, y: 103}
+        - {x: -79.333374, y: 38}
+        - {x: -79.333374, y: -71}
+        - {x: -72.333374, y: -82}
+        - {x: -46.333374, y: -97}
+        - {x: 36.666626, y: -97}
+        - {x: 107.666626, y: 36}
+        - {x: 107.666626, y: 74}
+        - {x: 58.666626, y: 103}
+    - name: BolegLoopRefillWalk_Spritesheet6x5_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 550
+        width: 440
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 107, y: 61.666656}
+        - {x: 93, y: 70.66666}
+        - {x: 25, y: 102.66666}
+        - {x: -58, y: 102.66666}
+        - {x: -82, y: 18.666656}
+        - {x: -82, y: -85.33334}
+        - {x: -50, y: -82.33334}
+        - {x: -40, y: -72.33334}
+        - {x: -19, y: -96.33334}
+        - {x: 13, y: -96.33334}
+        - {x: 21, y: -92.33334}
+        - {x: 27, y: -72.33334}
+        - {x: 29, y: -53.333344}
+        - {x: 107, y: 40.666656}
+    - name: BolegLoopRefillWalk_Spritesheet6x5_13
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 550
+        width: 440
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 83.33331, y: 70.66666}
+        - {x: 13.333313, y: 101.66666}
+        - {x: -42.666687, y: 101.66666}
+        - {x: -82.66669, y: 26.666656}
+        - {x: -82.66669, y: -65.33334}
+        - {x: -77.66669, y: -85.33334}
+        - {x: -54.666687, y: -84.33334}
+        - {x: -40.666687, y: -72.33334}
+        - {x: -5.666687, y: -100.33334}
+        - {x: 20.333313, y: -100.33334}
+        - {x: 26.333313, y: -78.33334}
+        - {x: 107.33331, y: 36.666656}
+        - {x: 107.33331, y: 63.666656}
+    - name: BolegLoopRefillWalk_Spritesheet6x5_14
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 550
+        width: 440
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -43.333374, y: 100.66666}
+        - {x: -83.333374, y: 58.666656}
+        - {x: -83.333374, y: -79.33334}
+        - {x: -75.333374, y: -85.33334}
+        - {x: -55.333374, y: -80.33334}
+        - {x: -45.333374, y: -72.33334}
+        - {x: -1.333374, y: -101.33334}
+        - {x: 22.666626, y: -101.33334}
+        - {x: 29.666626, y: -100.33334}
+        - {x: 107.666626, y: 26.666656}
+        - {x: 107.666626, y: 78.66666}
+        - {x: 76.666626, y: 100.66666}
+    - name: BolegLoopRefillWalk_Spritesheet6x5_15
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 550
+        width: 440
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.500061, y: 99.66666}
+        - {x: -24.500061, y: 91.66666}
+        - {x: -43.50006, y: 57.666656}
+        - {x: -85.50006, y: -0.3333435}
+        - {x: -85.50006, y: -79.33334}
+        - {x: -73.50006, y: -82.33334}
+        - {x: -59.50006, y: -81.33334}
+        - {x: -49.50006, y: -65.33334}
+        - {x: -10.500061, y: -100.33334}
+        - {x: 24.499939, y: -100.33334}
+        - {x: 35.49994, y: -92.33334}
+        - {x: 108.49994, y: 32.666656}
+        - {x: 108.49994, y: 76.66666}
+        - {x: 39.49994, y: 99.66666}
+    - name: BolegLoopRefillWalk_Spritesheet6x5_16
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 550
+        width: 440
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29.666748, y: 99.66666}
+        - {x: -86.66675, y: 87.66666}
+        - {x: -86.66675, y: -101.33334}
+        - {x: 32.333252, y: -101.33334}
+        - {x: 107.33325, y: -15.3333435}
+        - {x: 107.33325, y: 67.66666}
+        - {x: 13.333252, y: 99.66666}
+    - name: BolegLoopRefillWalk_Spritesheet6x5_17
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 550
+        width: 440
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51.666626, y: 99.66666}
+        - {x: -41.333374, y: 99.66666}
+        - {x: -86.333374, y: 29.666656}
+        - {x: -86.333374, y: -101.33334}
+        - {x: 53.666626, y: -101.33334}
+        - {x: 107.666626, y: 28.666656}
+        - {x: 107.666626, y: 57.666656}
+        - {x: 104.666626, y: 66.66666}
+    - name: BolegLoopRefillWalk_Spritesheet6x5_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 275
+        width: 440
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -87, y: -73.66667}
+        - {x: -84, y: -84.66667}
+        - {x: -54, y: -100.66667}
+        - {x: 37, y: -100.66667}
+        - {x: 107, y: -15.666672}
+        - {x: 107, y: 59.33333}
+        - {x: 104, y: 62.33333}
+        - {x: 58, y: 99.33333}
+        - {x: -33, y: 99.33333}
+        - {x: -87, y: 27.333328}
+    - name: BolegLoopRefillWalk_Spritesheet6x5_19
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 275
+        width: 440
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35.666687, y: 101.33333}
+        - {x: -84.66669, y: 14.333328}
+        - {x: -84.66669, y: -97.66667}
+        - {x: -29.666687, y: -88.66667}
+        - {x: -8.666687, y: -102.66667}
+        - {x: 36.333313, y: -102.66667}
+        - {x: 107.33331, y: 19.333328}
+        - {x: 107.33331, y: 76.33333}
+        - {x: 59.333313, y: 101.33333}
+    - name: BolegLoopRefillWalk_Spritesheet6x5_20
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 275
+        width: 440
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 78.666626, y: 101.33333}
+        - {x: -21.333374, y: 101.33333}
+        - {x: -61.333374, y: 70.33333}
+        - {x: -83.333374, y: -13.666672}
+        - {x: -83.333374, y: -78.66667}
+        - {x: -54.333374, y: -81.66667}
+        - {x: -47.333374, y: -69.66667}
+        - {x: -7.333374, y: -98.66667}
+        - {x: -1.333374, y: -99.66667}
+        - {x: 19.666626, y: -99.66667}
+        - {x: 83.666626, y: -28.666672}
+        - {x: 107.666626, y: 17.333328}
+        - {x: 107.666626, y: 92.33333}
+    - name: BolegLoopRefillWalk_Spritesheet6x5_21
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 275
+        width: 440
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 50.49994, y: 104.33333}
+        - {x: -32.50006, y: 104.33333}
+        - {x: -82.50006, y: 11.333328}
+        - {x: -82.50006, y: -74.66667}
+        - {x: -75.50006, y: -84.66667}
+        - {x: -50.50006, y: -95.66667}
+        - {x: 27.499939, y: -95.66667}
+        - {x: 108.49994, y: 12.333328}
+        - {x: 108.49994, y: 71.33333}
+        - {x: 107.49994, y: 73.33333}
+    - name: BolegLoopRefillWalk_Spritesheet6x5_22
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 275
+        width: 440
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21.666748, y: 106.33333}
+        - {x: -82.66675, y: 23.333328}
+        - {x: -82.66675, y: -83.66667}
+        - {x: -49.666748, y: -82.66667}
+        - {x: -42.666748, y: -68.66667}
+        - {x: -18.666748, y: -93.66667}
+        - {x: 14.333252, y: -93.66667}
+        - {x: 26.333252, y: -91.66667}
+        - {x: 107.33325, y: 36.33333}
+        - {x: 107.33325, y: 67.33333}
+        - {x: 24.333252, y: 106.33333}
+    - name: BolegLoopRefillWalk_Spritesheet6x5_23
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 275
+        width: 440
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.333374, y: 106.33333}
+        - {x: -61.333374, y: 68.33333}
+        - {x: -81.333374, y: 3.3333282}
+        - {x: -81.333374, y: -69.66667}
+        - {x: -77.333374, y: -94.66667}
+        - {x: 24.666626, y: -94.66667}
+        - {x: 35.666626, y: -89.66667}
+        - {x: 107.666626, y: 24.333328}
+        - {x: 107.666626, y: 74.33333}
+        - {x: 46.666626, y: 106.33333}
+    - name: BolegLoopRefillWalk_Spritesheet6x5_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 440
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 106}
+        - {x: -76, y: 76}
+        - {x: -83, y: 43}
+        - {x: -83, y: -87}
+        - {x: -61, y: -95}
+        - {x: 59, y: -95}
+        - {x: 107, y: 13}
+        - {x: 107, y: 66}
+        - {x: 40, y: 106}
+    - name: BolegLoopRefillWalk_Spritesheet6x5_25
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 0
+        width: 440
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 54.333313, y: 106}
+        - {x: -35.666687, y: 106}
+        - {x: -81.66669, y: 25}
+        - {x: -81.66669, y: -93}
+        - {x: 39.333313, y: -93}
+        - {x: 105.33331, y: 36}
+        - {x: 107.33331, y: 40}
+        - {x: 107.33331, y: 77}
+    - name: BolegLoopRefillWalk_Spritesheet6x5_26
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 0
+        width: 440
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33.333374, y: 103}
+        - {x: -82.333374, y: -16}
+        - {x: -82.333374, y: -93}
+        - {x: 61.666626, y: -93}
+        - {x: 107.666626, y: 27}
+        - {x: 107.666626, y: 68}
+        - {x: 25.666626, y: 103}
+    - name: BolegLoopRefillWalk_Spritesheet6x5_27
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 0
+        width: 440
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21.499939, y: 102}
+        - {x: -35.50006, y: 102}
+        - {x: -81.50006, y: 0}
+        - {x: -81.50006, y: -76}
+        - {x: -74.50006, y: -83}
+        - {x: -55.50006, y: -83}
+        - {x: -44.50006, y: -72}
+        - {x: -34.50006, y: -91}
+        - {x: 46.49994, y: -91}
+        - {x: 108.49994, y: 24}
+        - {x: 108.49994, y: 84}
+        - {x: 106.49994, y: 90}
+    - name: BolegLoopRefillWalk_Spritesheet6x5_28
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 0
+        width: 440
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21.666748, y: 101}
+        - {x: -55.666748, y: 63}
+        - {x: -83.66675, y: -4}
+        - {x: -83.66675, y: -72}
+        - {x: -74.66675, y: -89}
+        - {x: -53.666748, y: -85}
+        - {x: -43.666748, y: -63}
+        - {x: -36.666748, y: -84}
+        - {x: -30.666748, y: -88}
+        - {x: -23.666748, y: -88}
+        - {x: -6.666748, y: -92}
+        - {x: 30.333252, y: -92}
+        - {x: 49.333252, y: -73}
+        - {x: 107.33325, y: 33}
+        - {x: 107.33325, y: 77}
+        - {x: 50.333252, y: 101}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

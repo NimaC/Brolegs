@@ -26,6 +26,7 @@ public class BolegController : MonoBehaviour
 	public static float scaleZ;
     public bool fireBreathing;
 	public float targetJumpHeight = 4.5f;
+	public static bool refill;
 
     //Animationen
     Animator anim;
@@ -103,12 +104,12 @@ public class BolegController : MonoBehaviour
 
         }
 
-        if (Input.GetButton(fireButton) && FireScript.fireTime > 0)
+		if (Input.GetButton(fireButton) && FireScript.fireTime > 0)
         {
             fireBreathing = true;
         }
 
-        if (!Input.GetButton(fireButton) || FireScript.fireTime < 0)
+		if (!Input.GetButton(fireButton) || FireScript.fireTime < 0)
         {
             fireBreathing = false;
         }
@@ -122,8 +123,7 @@ public class BolegController : MonoBehaviour
         anim.SetFloat("vSpeed", velocity.y);
 		anim.SetBool("Fire", fireBreathing);
         anim.SetBool("Grounded", _controller.isGrounded);
-
-
+		anim.SetBool("Refill", refill);
     }
 
 

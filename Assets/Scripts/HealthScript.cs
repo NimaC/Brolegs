@@ -68,7 +68,7 @@ public class HealthScript : MonoBehaviour {
     
 	IEnumerator Deathdelay() {
 		Controller (false);
-		yield return new WaitForSeconds (.5f);
+		yield return new WaitForSeconds (1.5f);
 		Controller (true);
 		Vector3 temp = new Vector3(0,-7.5f,-4.3f);
 		rBody.transform.position = temp;

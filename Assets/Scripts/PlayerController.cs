@@ -44,7 +44,6 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         var velocity = _controller.velocity;
-
         if (_controller.isGrounded)
 
             velocity.y = 0;
