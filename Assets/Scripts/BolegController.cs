@@ -99,7 +99,6 @@ public class BolegController : MonoBehaviour
         if (Input.GetButtonDown(jumpButton) && _controller.isGrounded)
         {
             velocity.y = Mathf.Sqrt(2f * targetJumpHeight * -gravity);
-            anim.SetTrigger("Jump");
 
 
         }

@@ -1,0 +1,227 @@
+fileFormatVersion: 2
+guid: 98e65f71ab52d4ab1976ba0f95a018ce
+timeCreated: 1470134210
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: FireBar0_Spritesheet3x3_0
+    21300002: FireBar0_Spritesheet3x3_1
+    21300004: FireBar0_Spritesheet3x3_2
+    21300006: FireBar0_Spritesheet3x3_3
+    21300008: FireBar0_Spritesheet3x3_4
+    21300010: FireBar0_Spritesheet3x3_5
+    21300012: FireBar0_Spritesheet3x3_6
+    21300014: FireBar0_Spritesheet3x3_7
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: FireBar0_Spritesheet3x3_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 200
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -80, y: -12}
+        - {x: -86, y: -19}
+        - {x: -86, y: -32}
+        - {x: -78, y: -39}
+        - {x: -71, y: -39}
+        - {x: -69, y: -38}
+        - {x: -64, y: -34}
+        - {x: -64, y: -21}
+        - {x: -69, y: -12}
+    - name: FireBar0_Spritesheet3x3_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 160
+        width: 200
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -80, y: -12}
+        - {x: -86, y: -19}
+        - {x: -86, y: -32}
+        - {x: -78, y: -39}
+        - {x: -71, y: -39}
+        - {x: -69, y: -38}
+        - {x: -64, y: -34}
+        - {x: -64, y: -21}
+        - {x: -69, y: -12}
+    - name: FireBar0_Spritesheet3x3_2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 160
+        width: 200
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -81, y: -11}
+        - {x: -83, y: -12}
+        - {x: -86, y: -19}
+        - {x: -86, y: -33}
+        - {x: -77, y: -39}
+        - {x: -67, y: -39}
+        - {x: -64, y: -36}
+        - {x: -64, y: -20}
+        - {x: -69, y: -11}
+    - name: FireBar0_Spritesheet3x3_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 200
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -87, y: -8}
+        - {x: -87, y: -38}
+        - {x: -65, y: -38}
+        - {x: -63, y: -31}
+        - {x: -63, y: -18}
+        - {x: -77, y: -8}
+    - name: FireBar0_Spritesheet3x3_4
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 80
+        width: 200
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -83, y: -8}
+        - {x: -88, y: -16}
+        - {x: -88, y: -29}
+        - {x: -87, y: -36}
+        - {x: -79, y: -38}
+        - {x: -66, y: -38}
+        - {x: -64, y: -36}
+        - {x: -64, y: -14}
+        - {x: -76, y: -8}
+    - name: FireBar0_Spritesheet3x3_5
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 80
+        width: 200
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -87, y: -7}
+        - {x: -87, y: -38}
+        - {x: -68, y: -38}
+        - {x: -63, y: -36}
+        - {x: -63, y: -14}
+        - {x: -74, y: -7}
+    - name: FireBar0_Spritesheet3x3_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 200
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -83, y: -7}
+        - {x: -87, y: -12}
+        - {x: -87, y: -29}
+        - {x: -85, y: -33}
+        - {x: -79, y: -39}
+        - {x: -69, y: -39}
+        - {x: -63, y: -37}
+        - {x: -63, y: -17}
+        - {x: -65, y: -10}
+        - {x: -77, y: -7}
+    - name: FireBar0_Spritesheet3x3_7
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 200
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -74, y: -7}
+        - {x: -76, y: -7}
+        - {x: -79, y: -8}
+        - {x: -81, y: -10}
+        - {x: -80, y: -12}
+        - {x: -80, y: -17}
+        - {x: -80, y: -15}
+        - {x: -82, y: -11}
+        - {x: -88, y: -17}
+        - {x: -88, y: -23}
+        - {x: -85, y: -30}
+        - {x: -81, y: -36}
+        - {x: -79, y: -38}
+        - {x: -66, y: -38}
+        - {x: -63, y: -32}
+        - {x: -63, y: -15}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -23,9 +23,9 @@ public class GameOverScript : MonoBehaviour {
         )
         {
             // Reload the level
-            Application.LoadLevel("BaseScene");
+            Application.LoadLevel("WoodenStage");
 			Time.timeScale = 1.0f;
-			healthscript.Controller (true);
+			// healthscript.Controller (true);
         }
 
         if (

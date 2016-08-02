@@ -8,11 +8,11 @@ public class ProjectileController : MonoBehaviour {
 
     void OnCollisionEnter2D (Collision2D col)
     {
-		if (col.gameObject.tag == "Player" && !isStuck || col.gameObject.tag == "Projectile" || col.gameObject.tag == "Fire" || col.gameObject.tag == "Border") {
+		if (col.gameObject.tag == "Player" && !isStuck || col.gameObject.tag == "Projectile" || col.gameObject.tag == "Fire" || col.gameObject.tag == "Border" || col.gameObject.tag == "Block") {
 			Destroy (gameObject);
-		} else if (col.gameObject.tag == "Block") {
+		}  /*else if (col.gameObject.tag == "Block") {
 			isStuck = true;
-		}
+		} */
     }
 
 	// Use this for initialization

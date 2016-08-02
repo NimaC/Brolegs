@@ -12,6 +12,7 @@ public class FireScript : MonoBehaviour {
 	void Start () {
 
 	}
+
 	void Awake ()
 	{
 		bolegCtrl = transform.root.GetComponent<BolegController>();
@@ -19,7 +20,6 @@ public class FireScript : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		Debug.Log (fireTime);
 		if (fireTime > 0) {
 			if (Input.GetButton (fireButton)) {
 				Vector3 tempPlace = new Vector3 (BolegController.positionX, BolegController.positionY, BolegController.positionZ);
