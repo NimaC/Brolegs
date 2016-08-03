@@ -12,12 +12,21 @@ public class HealthScript : MonoBehaviour {
 	private Rigidbody2D rBody;
     private bool spawnShield = false;
 
+	public AudioSource[] sounds;
+	AudioSource audio;
+
 	private int numIcons = 3;
 	private GameObject[] olegIcons;
 	private GameObject[] bolegIcons;
 	private Renderer[] olegiconrend;
 	private Renderer[] bolegiconrend;
 	int f = 0;
+
+	void chooseRndHitSnd()
+	{
+		int numb = (int) Random.Range (2f, 5f);
+		audio = sounds [numb];
+	}
 
     void Awake ()
     {
@@ -40,6 +49,8 @@ public class HealthScript : MonoBehaviour {
     {
 		if (col.gameObject.tag == "Projectile" && dieCount < 2 && spawnShield == false && !ProjectileController.isStuck && gameObject.name != "Oleg") {
 			spawnShield = true;
+			chooseRndHitSnd ();
+			audio.Play();
 			// anim.Play(dieState);
             StartCoroutine(Deathdelay());
         }		
@@ -62,6 +73,8 @@ public class HealthScript : MonoBehaviour {
 		else if (col.gameObject.tag == "Projectile" && dieCount == 2 && spawnShield == false && gameObject.name != "Oleg") {
 			spawnShield = true;
 			Controller (false);
+			chooseRndHitSnd ();
+			audio.Play();
 			// anim.Play (dieState);
 			transform.gameObject.AddComponent<GameOverScript> ();
 			StartCoroutine (Freezedelay ());
@@ -113,6 +126,7 @@ public class HealthScript : MonoBehaviour {
 	void Start () {
 		anim = GetComponent<Animator>();
 		rBody = GetComponent<Rigidbody2D>();
+		sounds = GetComponents<AudioSource> ();
     }
 	
 	// Update is called once per frame

@@ -28,6 +28,10 @@ public class BolegController : MonoBehaviour
 	public float targetJumpHeight = 4.5f;
 	public static bool refill;
 
+	//Sounds
+	public AudioSource[] sounds;
+	AudioSource audio;
+
     //Animationen
     Animator anim;
 
@@ -44,9 +48,15 @@ public class BolegController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
-
+		sounds = GetComponents<AudioSource>();
     }
+
+	void chooseRndSnd() {
+		int numb = (int) Random.Range (0f, 2f);
+		Debug.Log (numb);
+		audio = sounds [numb];
+	}
+
 
     // Update is called once per frame
     void Update()
@@ -98,8 +108,9 @@ public class BolegController : MonoBehaviour
         //Vertikaler SpielerInput
         if (Input.GetButtonDown(jumpButton) && _controller.isGrounded)
         {
-            velocity.y = Mathf.Sqrt(2f * targetJumpHeight * -gravity);
-
+			chooseRndSnd ();
+			audio.Play();
+			velocity.y = Mathf.Sqrt(2f * targetJumpHeight * -gravity);
 
         }
 

@@ -12,15 +12,10 @@ public class FireBar : MonoBehaviour {
 	}
 
 	void Awake() {
-		bolegCtrl = transform.root.GetComponent<BolegController>();
 	}
 
 	// Update is called once per frame
 	void Update () {
 		anim.SetFloat("FireBlend", FireScript.fireTime);
-	}
-	void FixedUpdate() {
-		Vector3 tempPlace = new Vector3 (BolegController.positionX, BolegController.positionY + 2.0f, BolegController.positionZ);
-		transform.position = tempPlace;
 	}
 }

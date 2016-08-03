@@ -20,6 +20,9 @@ public class PlayerController : MonoBehaviour
 
     private CharacterController2D _controller;
 
+	public AudioSource[] sounds;
+	AudioSource audio;
+
     //Animationen
     Animator anim;
 
@@ -28,22 +31,26 @@ public class PlayerController : MonoBehaviour
 
     void Awake()
     {
-        _controller = GetComponent<CharacterController2D>();
-        anim = GetComponent<Animator>();
-        rBody = GetComponent<Rigidbody2D>();
     }
 
     // Use this for initialization
     void Start()
     {
-
-
+		_controller = GetComponent<CharacterController2D>();
+		anim = GetComponent<Animator>();
+		rBody = GetComponent<Rigidbody2D>();
+		sounds = GetComponents<AudioSource>();
     }
+
+	void chooseRndSnd() {
+		int numb = (int) Random.Range (0f, 2f);
+		audio = sounds [numb];
+	}
 
     // Update is called once per frame
     void Update()
-    {
-        var velocity = _controller.velocity;
+	{
+		var velocity = _controller.velocity;
         if (_controller.isGrounded)
 
             velocity.y = 0;
@@ -81,14 +88,16 @@ public class PlayerController : MonoBehaviour
         //Vertikaler SpielerInput
         if (Input.GetButtonDown(jumpButton) && _controller.isGrounded)
         {
-            velocity.y = Mathf.Sqrt(2f * targetJumpHeight * -gravity);
+			chooseRndSnd ();
+			audio.Play();
+			velocity.y = Mathf.Sqrt(2f * targetJumpHeight * -gravity);
             anim.SetTrigger("Jump");
            
         }
 
-        if (Input.GetButtonDown(fireButton))
+		if (Input.GetButtonDown(fireButton))
         {
-            anim.SetTrigger("Fire");
+			anim.SetTrigger("Fire");
         }
 
 

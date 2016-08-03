@@ -4,13 +4,17 @@ using System.Collections;
 public class AttackScript : MonoBehaviour {
 
     public Rigidbody2D projectile;
-    public float speed = 30f;
-    public float gravity = -30f;
+    private float speed = 33f;
+    private float gravity = -30f;
     //public string gunButton = "Fire_P1";
     private PlayerController playerCtrl;
     public string fireButton = "Fire_P1";
-	private int knifeCount;
+	public int knifeCount;
     private float timeLeft = 5.0f;
+
+	public AudioSource[] sounds;
+	AudioSource audio;
+	// AudioSource audio1;
 
 	private GameObject knifeicon1;
 	private GameObject knifeicon2;
@@ -19,6 +23,7 @@ public class AttackScript : MonoBehaviour {
 	private Renderer rendknifeicon2;
 	private Renderer rendknifeicon3;
     
+
 	void Awake ()
     {
 		playerCtrl = transform.root.GetComponent<PlayerController>();
@@ -33,6 +38,7 @@ public class AttackScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		knifeCount = 3;
+		sounds = GetComponents<AudioSource>();
 	}
 
 	void Refillknives() {
@@ -41,8 +47,10 @@ public class AttackScript : MonoBehaviour {
 			timeLeft -= Time.deltaTime;
 			if (timeLeft < 0)
 			{
+				audio = sounds [2];
+				audio.Play();
 				knifeCount = knifeCount + 1;
-				timeLeft = 5.0f;
+				timeLeft = 3.5f;
 			}
 		}
 	}
@@ -67,6 +75,11 @@ public class AttackScript : MonoBehaviour {
 		}
 	}
 
+	void chooseRndSnd() {
+		int numb = (int) Random.Range (0f, 2f);
+		audio = sounds [numb];
+	}
+
     // Update is called once per frame
     void Update () {
 			
@@ -75,13 +88,15 @@ public class AttackScript : MonoBehaviour {
 
             if (Input.GetButtonDown(fireButton) && knifeCount > 0)
             {
+			chooseRndSnd ();
+			audio.Play();
 			knifeCount = knifeCount - 1;
 			// Invoke ("Refillknives", 5);
             //playerCtrl.playerShoot();
             if(playerCtrl.facingRight)
             {
                 Rigidbody2D projectileInstance = Instantiate(projectile, transform.position, Quaternion.Euler(new Vector3(0, 0, 0))) as Rigidbody2D;
-                projectileInstance.velocity = new Vector2(speed, 0);
+				projectileInstance.velocity = new Vector2(speed, 0);
             }
             else
             {
