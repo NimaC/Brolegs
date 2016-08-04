@@ -65,18 +65,16 @@ public class HealthScript : MonoBehaviour {
 			spawnShield = true;
 			Controller (false);
 			// anim.Play (dieState);
-			transform.gameObject.AddComponent<GameOverScript> ();
 			StartCoroutine (Freezedelay ());
 		}
     
 
-		else if (col.gameObject.tag == "Projectile" && dieCount == 2 && spawnShield == false && gameObject.name != "Oleg") {
+		else if (col.gameObject.tag == "Projectile" && dieCount == 2 && !ProjectileController.isStuck && spawnShield == false && gameObject.name != "Oleg") {
 			spawnShield = true;
 			Controller (false);
 			chooseRndHitSnd ();
 			audio.Play();
-			// anim.Play (dieState);
-			transform.gameObject.AddComponent<GameOverScript> ();
+			// anim.Play (dieState)
 			StartCoroutine (Freezedelay ());
 		}
     }
@@ -97,8 +95,10 @@ public class HealthScript : MonoBehaviour {
     }
 
 	IEnumerator Freezedelay() {
-		yield return new WaitForSeconds (.4f);
+		anim.SetBool("Dead", true);
+		yield return new WaitForSeconds (1f);
 		Time.timeScale = 0.0f;
+		transform.gameObject.AddComponent<GameOverScript> ();
 	}
 
 	public void Controller (bool enable) {
