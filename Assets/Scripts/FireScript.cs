@@ -8,9 +8,15 @@ public class FireScript : MonoBehaviour {
 	public string refillButton = "Refill_P1";
 	public static float fireTime = 2.5f;
 
+	//Sounds
+	public AudioSource[] sounds;
+	AudioSource audio;
+
 	// Use this for initialization
 	void Start () {
-
+		sounds = GetComponents<AudioSource> ();
+		audio = sounds [0];
+		audio.loop = false;
 	}
 
 	void Awake ()
@@ -45,8 +51,10 @@ public class FireScript : MonoBehaviour {
 		if (Input.GetButton (refillButton) && fireTime < 2.5f && !Input.GetButton (fireButton)) {
 			fireTime += (Time.deltaTime) / 2;
 			BolegController.refill = true;
+			audio.Play ();
 		} else {
 			BolegController.refill = false;
+			// audio.Stop();
 		}
 		/* IEnumerator Firedelay() {
 		yield return new WaitForSeconds (3.0f);

@@ -11,20 +11,20 @@ public class ProjectileController : MonoBehaviour {
     void OnCollisionEnter2D (Collision2D col)
     {
 		audio.Play ();
-		if (col.gameObject.tag == "Player" && !isStuck || col.gameObject.tag == "Projectile" || col.gameObject.tag == "Fire") {
+		if (col.gameObject.tag == "Player" && !isStuck || col.gameObject.tag == "Projectile") {
 			StartCoroutine(playsound());
 		}  else if (col.gameObject.tag == "Block") {
 			isStuck = true;
 			StartCoroutine(playsoundstuck());
 		} 
-		else if (col.gameObject.tag == "Border") {
+		else if (col.gameObject.tag == "Border" || col.gameObject.tag == "Fire") {
 			Destroy (gameObject);
 		}
     }
 
 	IEnumerator playsoundstuck() {
 		audio.Play ();
-		yield return new WaitForSeconds (1f);
+		yield return new WaitForSeconds (0.4f);
 		Destroy (gameObject);
 	}
 
