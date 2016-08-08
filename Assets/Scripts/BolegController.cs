@@ -53,7 +53,6 @@ public class BolegController : MonoBehaviour
 
 	void chooseRndSnd() {
 		int numb = (int) Random.Range (0f, 2f);
-		Debug.Log (numb);
 		audio = sounds [numb];
 	}
 

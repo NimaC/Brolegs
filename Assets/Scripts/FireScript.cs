@@ -7,16 +7,14 @@ public class FireScript : MonoBehaviour {
 	public string fireButton = "Fire_P2";
 	public string refillButton = "Refill_P1";
 	public static float fireTime = 2.5f;
-
+	public AudioClip fire;
+	public AudioClip refill;
 	//Sounds
 	public AudioSource[] sounds;
 	AudioSource audio;
 
 	// Use this for initialization
 	void Start () {
-		sounds = GetComponents<AudioSource> ();
-		audio = sounds [0];
-		audio.loop = false;
 	}
 
 	void Awake ()
@@ -36,7 +34,9 @@ public class FireScript : MonoBehaviour {
 			} else {
 				transform.position = new Vector3 (100, 100, 100);
 			}
+			  
 		}
+
 		else {
 			transform.position = new Vector3 (100, 100, 100);
 			//StartCoroutine (Firedelay ());
@@ -51,10 +51,29 @@ public class FireScript : MonoBehaviour {
 		if (Input.GetButton (refillButton) && fireTime < 2.5f && !Input.GetButton (fireButton)) {
 			fireTime += (Time.deltaTime) / 2;
 			BolegController.refill = true;
-			audio.Play ();
 		} else {
 			BolegController.refill = false;
 			// audio.Stop();
+		}
+
+		// Sounds 
+		if (Input.GetButtonDown (fireButton) && fireTime > 0) {
+				audio = GetComponent<AudioSource> ();
+				audio.PlayOneShot (fire);
+			}  
+		
+		else if (Input.GetButtonUp(fireButton)) {
+			audio = GetComponent<AudioSource> ();
+			audio.Stop ();
+		} 
+
+		if (Input.GetButtonDown(refillButton) && fireTime < 2.5f && !Input.GetButton (fireButton)) {
+			audio = GetComponent<AudioSource> ();
+			audio.PlayOneShot (refill);
+		} 
+		else if (Input.GetButtonUp(refillButton)) {
+			audio = GetComponent<AudioSource> ();
+			audio.Stop ();
 		}
 		/* IEnumerator Firedelay() {
 		yield return new WaitForSeconds (3.0f);

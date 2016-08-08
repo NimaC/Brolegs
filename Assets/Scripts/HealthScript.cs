@@ -14,6 +14,8 @@ public class HealthScript : MonoBehaviour {
 
 	public AudioSource[] sounds;
 	AudioSource audio;
+	AudioSource olegdeadsound;
+	public AudioClip OlegDies;
 
 	private int numIcons = 3;
 	private GameObject[] olegIcons;
@@ -48,13 +50,18 @@ public class HealthScript : MonoBehaviour {
         }		
 
 		else if (col.gameObject.tag == "Fire" && dieCount < 2 && spawnShield == false && gameObject.name != "Boleg") {
+			Debug.Log("OLEGHIT");
 			spawnShield = true;
+			AudioSource olegdie = GetComponent<AudioSource> ();
+			olegdie.PlayOneShot (OlegDies);
 			// anim.Play(dieState);
 			StartCoroutine(Deathdelay());
 		}
 
 		else if (col.gameObject.tag == "Fire" && dieCount == 2 && spawnShield == false && gameObject.name != "Boleg") {
 			spawnShield = true;
+			AudioSource olegdie = GetComponent<AudioSource> ();
+			olegdie.PlayOneShot (OlegDies);
 			Controller (false);
 			// anim.Play (dieState);
 			StartCoroutine (Freezedelay ());
@@ -185,7 +192,6 @@ public class HealthScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Debug.Log (dieCount);
 		SplashIconDisable (); 
 		/* if(projectile != null && projectile.gameObject.tag== "Projectile")
          {
