@@ -433,9 +433,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: -2.5, y: 0}
+  m_Offset: {x: -2.4999993, y: -0.24601573}
   serializedVersion: 2
-  m_Size: {x: 5, y: 5}
+  m_Size: {x: 5, y: 4.507965}
 --- !u!212 &422867640
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1172,9 +1172,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.24601842}
   serializedVersion: 2
-  m_Size: {x: 10, y: 5}
+  m_Size: {x: 10, y: 4.507963}
 --- !u!1 &589099163
 GameObject:
   m_ObjectHideFlags: 0
@@ -2325,7 +2325,7 @@ Transform:
   m_GameObject: {fileID: 1001257249}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 14.65, y: 10, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.04, y: 1.04, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -3051,9 +3051,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: -2, y: 0}
+  m_Offset: {x: -1.9999983, y: -0.24601842}
   serializedVersion: 2
-  m_Size: {x: 5, y: 5}
+  m_Size: {x: 5, y: 4.5079637}
 --- !u!212 &1101053006
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4516,7 +4516,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
 --- !u!1 &1970201433
 GameObject:
   m_ObjectHideFlags: 0
