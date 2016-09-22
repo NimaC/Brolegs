@@ -7,7 +7,7 @@ public class HealthScript : MonoBehaviour {
     //private CharacterController2D playerCtrl;
     private Collider2D projectile;
     Animator anim;
-	private int dieCount = 0;
+	public int dieCount = 0;
     // private int dieState = Animator.StringToHash("Base Layer.Die");
 	private Rigidbody2D rBody;
     private bool spawnShield = false;

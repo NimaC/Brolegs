@@ -2,13 +2,25 @@
 using System.Collections;
 
 public class GameOverScript : MonoBehaviour {
-	public HealthScript healthscript;
+	HealthScript oleghsscript;
+	GameObject Oleg;
+
+	void Awake ()
+	{
+		Oleg = GameObject.Find("Oleg");
+		oleghsscript = Oleg.GetComponent<HealthScript>();
+	}
 
     void OnGUI()
     {
         const int buttonWidth = 120;
         const int buttonHeight = 60;
 
+		if (oleghsscript.dieCount == 2) {
+			GUI.Label (new Rect (Screen.width / 2, Screen.height / 2, 100, 20), "Boleg Wins!");
+		} else {
+			GUI.Label(new Rect(Screen.width / 2, Screen.height / 2, 100, 20), "Oleg Wins!");
+		}
         //Position der zwei Buttons
         if (
             GUI.Button(
@@ -25,7 +37,6 @@ public class GameOverScript : MonoBehaviour {
             // Reload the level
             Application.LoadLevel("WoodenStage");
 			Time.timeScale = 1.0f;
-			// healthscript.Controller (true);
         }
 
         if (

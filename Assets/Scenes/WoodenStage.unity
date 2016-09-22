@@ -2234,6 +2234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a362eb2f734b941479822740d3ff0b37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dieCount: 0
   sounds: []
   OlegDies: {fileID: 0}
 --- !u!114 &1001257256
