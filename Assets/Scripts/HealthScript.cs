@@ -12,6 +12,17 @@ public class HealthScript : MonoBehaviour {
 	private Rigidbody2D rBody;
     private bool spawnShield = false;
 
+	private GameObject olegupper;
+	private GameObject oleglower;
+	private GameObject boleg;
+
+	private SpriteRenderer olegupperRend;
+	private SpriteRenderer oleglowerRend;
+	private SpriteRenderer bolegRend;
+
+	private Material shiny;
+	private Material norm;
+
 	public AudioSource[] sounds;
 	AudioSource audio;
 	AudioSource olegdeadsound;
@@ -36,7 +47,14 @@ public class HealthScript : MonoBehaviour {
 
     void Awake ()
     {
-
+		olegupper = GameObject.Find("upperBody");
+		oleglower = GameObject.Find("lowerBody");
+		boleg = GameObject.Find ("Boleg");
+		olegupperRend = olegupper.GetComponent<SpriteRenderer> ();
+		oleglowerRend = oleglower.GetComponent<SpriteRenderer> ();
+		bolegRend = boleg.GetComponent<SpriteRenderer> ();
+		shiny = Resources.Load("Materials/ShinyDefault", typeof(Material)) as Material;
+		norm = boleg.GetComponent<SpriteRenderer> ().material;
     }
 
     void OnCollisionEnter2D(Collision2D col)
@@ -87,10 +105,12 @@ public class HealthScript : MonoBehaviour {
 		Controller (true);
 		Vector3 temp = new Vector3(0,-7.5f,-4.3f);
 		rBody.transform.position = temp;
+		SpawnGlowOn ();
 		anim.SetBool("Dead", false);
 		dieCount = dieCount + 1;
         yield return new WaitForSeconds(3.0f);
         spawnShield = false;
+		SpawnGlowOff ();
     }
 
 	void bolegsplashiconhandler(int diecnt) {
@@ -143,6 +163,21 @@ public class HealthScript : MonoBehaviour {
 			GetComponent<BolegController> ().enabled = enable;
 			// GetComponent<FireScript> ().enabled = enable;
 		}
+	}
+
+	public void SpawnGlowOn() {
+		if (gameObject.name == "Oleg") {
+			olegupperRend.material = shiny;
+			oleglowerRend.material = shiny;
+		} else if (gameObject.name == "Boleg") {
+			bolegRend.material = shiny;
+		}
+	}
+
+	public void SpawnGlowOff() {
+		olegupperRend.material = norm;
+		oleglowerRend.material = norm;
+		bolegRend.material = norm;
 	}
 
 	public void IconDisable() {

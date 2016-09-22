@@ -2651,7 +2651,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 0}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -4308,6 +4308,18 @@ Prefab:
       propertyPath: OlegDies
       value: 
       objectReference: {fileID: 8300000, guid: c8060fc9d3fc44bad8cecbd7cf55d2d5, type: 3}
+    - target: {fileID: 21240602, guid: 6661224a7b077374e9ad73f0036ae0b2, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+    - target: {fileID: 21254534, guid: 6661224a7b077374e9ad73f0036ae0b2, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+    - target: {fileID: 21240602, guid: 6661224a7b077374e9ad73f0036ae0b2, type: 2}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6661224a7b077374e9ad73f0036ae0b2, type: 2}
   m_IsPrefabParent: 0
