@@ -68,7 +68,6 @@ public class HealthScript : MonoBehaviour {
         }		
 
 		else if (col.gameObject.tag == "Fire" && dieCount < 2 && spawnShield == false && gameObject.name != "Boleg") {
-			Debug.Log("OLEGHIT");
 			spawnShield = true;
 			AudioSource olegdie = GetComponent<AudioSource> ();
 			olegdie.PlayOneShot (OlegDies);
