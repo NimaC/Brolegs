@@ -16,7 +16,7 @@ public class GameOverScript : MonoBehaviour {
         const int buttonWidth = 120;
         const int buttonHeight = 60;
 
-		if (oleghsscript.dieCount == 2) {
+		if (oleghsscript.dieCount == 3) {
 			GUI.Label (new Rect (Screen.width / 2, Screen.height / 2, 100, 20), "Boleg Wins!");
 		} else {
 			GUI.Label(new Rect(Screen.width / 2, Screen.height / 2, 100, 20), "Oleg Wins!");

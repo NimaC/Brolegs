@@ -59,45 +59,38 @@ public class HealthScript : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D col)
     {
-		if (col.gameObject.tag == "Projectile" && dieCount < 2 && spawnShield == false && !ProjectileController.isStuck && gameObject.name != "Oleg") {
-			spawnShield = true;
-			chooseRndHitSnd ();
-			audio.Play();
-			// anim.Play(dieState);
-            StartCoroutine(Deathdelay());
-        }		
+		 {
+			if (col.gameObject.tag == "Projectile" && spawnShield == false && !ProjectileController.isStuck && gameObject.name != "Oleg") {
+				spawnShield = true;
+				chooseRndHitSnd ();
+				audio.Play ();
+				// anim.Play(dieState);
+				if (dieCount < 2) {
+					StartCoroutine (Deathdelay ());
+				} else {
+					Controller (false);
+					StartCoroutine (Freezedelay ());
+				}
 
-		else if (col.gameObject.tag == "Fire" && dieCount < 2 && spawnShield == false && gameObject.name != "Boleg") {
-			spawnShield = true;
-			AudioSource olegdie = GetComponent<AudioSource> ();
-			olegdie.PlayOneShot (OlegDies);
-			// anim.Play(dieState);
-			StartCoroutine(Deathdelay());
-		}
-
-		else if (col.gameObject.tag == "Fire" && dieCount == 2 && spawnShield == false && gameObject.name != "Boleg") {
-			spawnShield = true;
-			AudioSource olegdie = GetComponent<AudioSource> ();
-			olegdie.PlayOneShot (OlegDies);
-			Controller (false);
-			// anim.Play (dieState);
-			StartCoroutine (Freezedelay ());
-		}
-    
-
-		else if (col.gameObject.tag == "Projectile" && dieCount == 2 && !ProjectileController.isStuck && spawnShield == false && gameObject.name != "Oleg") {
-			spawnShield = true;
-			Controller (false);
-			chooseRndHitSnd ();
-			audio.Play();
-			// anim.Play (dieState)
-			StartCoroutine (Freezedelay ());
+			} else if (col.gameObject.tag == "Fire" && spawnShield == false && gameObject.name != "Boleg") {
+				spawnShield = true;
+				AudioSource olegdie = GetComponent<AudioSource> ();
+				olegdie.PlayOneShot (OlegDies);
+				// anim.Play(dieState);
+				if (dieCount < 2) {
+					StartCoroutine (Deathdelay ());
+				} else {
+					Controller (false);
+					StartCoroutine (Freezedelay ());
+				}
+			}
 		}
     }
 		
     
 	IEnumerator Deathdelay() {
 		IconDisable ();
+		dieCount = dieCount + 1;
 		anim.SetBool("Dead", true);
 		Controller (false);
 		yield return new WaitForSeconds (1.5f);
@@ -106,7 +99,6 @@ public class HealthScript : MonoBehaviour {
 		rBody.transform.position = temp;
 		SpawnGlowOn ();
 		anim.SetBool("Dead", false);
-		dieCount = dieCount + 1;
         yield return new WaitForSeconds(3.0f);
         spawnShield = false;
 		SpawnGlowOff ();
@@ -147,6 +139,7 @@ public class HealthScript : MonoBehaviour {
 
 	IEnumerator Freezedelay() {
 		IconDisable ();
+		dieCount = dieCount + 1;
 		anim.SetBool("Dead", true);
 		yield return new WaitForSeconds (1f);
 		Time.timeScale = 0.0f;
@@ -227,6 +220,7 @@ public class HealthScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		SplashIconDisable (); 
+		Debug.Log (dieCount);
 		/* if(projectile != null && projectile.gameObject.tag== "Projectile")
          {
              playerCtrl.OnTriggerEnter2D(projectile);
