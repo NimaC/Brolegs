@@ -142,7 +142,7 @@ public class HealthScript : MonoBehaviour {
 		dieCount = dieCount + 1;
 		anim.SetBool("Dead", true);
 		yield return new WaitForSeconds (1f);
-		Time.timeScale = 0.0f;
+		//Time.timeScale = 0.0f;
 		transform.gameObject.AddComponent<GameOverScript> ();
 	}
 
@@ -220,7 +220,6 @@ public class HealthScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		SplashIconDisable (); 
-		Debug.Log (dieCount);
 		/* if(projectile != null && projectile.gameObject.tag== "Projectile")
          {
              playerCtrl.OnTriggerEnter2D(projectile);

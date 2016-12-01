@@ -1,14 +1,31 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class GameOverScript : MonoBehaviour {
 	HealthScript oleghsscript;
+	Animator gameOveranim;
 	GameObject Oleg;
+	GameObject Boleg;
+	GameObject gameOver;
+	GameObject canvasobj;
+	GameObject Throw;
+	GameObject back;
+	GameObject revanche;
+	public Canvas[] canvas;
 
 	void Awake ()
 	{
 		Oleg = GameObject.Find("Oleg");
+		Boleg = GameObject.Find ("Boleg");
+		gameOver = GameObject.Find("GameOver");
+		Throw = GameObject.Find ("Throw");
+		back = GameObject.Find ("Back");
+		revanche = GameObject.Find ("Revanche");
 		oleghsscript = Oleg.GetComponent<HealthScript>();
+		gameOveranim = gameOver.GetComponent<Animator> ();
+		canvasobj = GameObject.Find ("Overlay");
+		canvas = canvasobj.GetComponents<Canvas> ();
 	}
 
     void OnGUI()
@@ -17,43 +34,16 @@ public class GameOverScript : MonoBehaviour {
         const int buttonHeight = 60;
 
 		if (oleghsscript.dieCount == 3) {
-			GUI.Label (new Rect (Screen.width / 2, Screen.height / 2, 100, 20), "Boleg Wins!");
+			gameOveranim.SetTrigger ("BolegVictory");
 		} else {
-			GUI.Label(new Rect(Screen.width / 2, Screen.height / 2, 100, 20), "Oleg Wins!");
+			gameOveranim.SetTrigger ("OlegVictory");
 		}
-        //Position der zwei Buttons
-        if (
-            GUI.Button(
-            new Rect(
-                Screen.width / 2 - (buttonWidth / 2),
-                (1 * Screen.height / 3) - (buttonHeight / 2),
-                buttonWidth,
-                buttonHeight
-            ),
-            "Play Again"
-            )
-        )
-        {
-            // Reload the level
-            Application.LoadLevel("WoodenStage");
-			Time.timeScale = 1.0f;
-        }
-
-        if (
-             GUI.Button(
-             new Rect(
-                 Screen.width / 2 - (buttonWidth / 2),
-                 (2 * Screen.height / 3) - (buttonHeight / 2),
-                 buttonWidth,
-                 buttonHeight
-             ),
-             "Back to menu"
-             )
-        )
-        {
-            // Reload the level
-            Application.LoadLevel("Menu");
-        }
+		back.GetComponent<Button>().enabled = true;
+		revanche.GetComponent<Button>().enabled = true;
+		canvas[0].enabled = true;
+		Oleg.GetComponent<PlayerController> ().enabled = false;
+		Throw.GetComponent<AttackScript> ().enabled = false;
+		Boleg.GetComponent<BolegController> ().enabled = false;
     }
 
 }
