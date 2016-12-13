@@ -10,12 +10,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LevelSelect.unity
   - enabled: 1
-    path: Assets/Scenes/Credits.unity
-  - enabled: 1
     path: Assets/Scenes/Green.unity
-  - enabled: 1
-    path: Assets/Scenes/Purple.unity
   - enabled: 1
     path: Assets/Scenes/Yellow.unity
   - enabled: 1
     path: Assets/Scenes/Purple.unity
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity

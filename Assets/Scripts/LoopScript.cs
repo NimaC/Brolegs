@@ -6,7 +6,7 @@ public class LoopScript : MonoBehaviour {
     private Rigidbody2D rBody;
     private float posX;
 	private float posY;
-	private float newposX = 24f;
+	private float newposX = 19.035f;
 	private float newposY = 11f;
 
     void Awake()
